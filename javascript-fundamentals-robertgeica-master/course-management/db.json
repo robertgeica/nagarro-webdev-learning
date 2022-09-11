@@ -1,0 +1,60 @@
+{
+  "courses": [
+    {
+      "id": 1,
+      "name": "history",
+      "assignedTeacher": "Victoria Cobbett",
+      "studentList": [
+        {
+          "id": 1,
+          "firstName": "Martin",
+          "lastName": "Lawrence",
+          "gender": "M",
+          "historyGrade": null
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "name": "english",
+      "assignedTeacher": "Cobbett",
+      "studentList": [
+        {
+          "id": 2,
+          "firstName": "Freddy",
+          "lastName": "Kelly",
+          "gender": "M",
+          "address": "3497 James Avenue",
+          "englishGrade": null
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "name": "Web Technologies",
+      "assignedTeacher": "Teacher",
+      "studentList": []
+    },
+    {
+      "id": 3,
+      "name": "Geography",
+      "assignedTeacher": "test",
+      "studentList": []
+    }
+  ],
+  "students": [
+    {
+      "id": 1,
+      "firstName": "Martin",
+      "lastName": "Lawrence",
+      "gender": "M"
+    },
+    {
+      "id": 2,
+      "firstName": "Freddy",
+      "lastName": "Kelly",
+      "gender": "M",
+      "address": "3497 James Avenue"
+    }
+  ]
+}

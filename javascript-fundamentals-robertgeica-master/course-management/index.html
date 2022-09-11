@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Course Management</title>
+
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css" integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous">
+  </head>
+  <body>
+    <header class="header-section">
+      <nav class="navbar">
+        <ul class="navbar-list">
+          <li class="navbar-item">
+            <a href="index.html">Course Management</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <div class="courses-container">
+        <ul id="courses-list" class="courses-list"></ul>
+      </div>
+
+      <div id="table-container">
+        <p id="assigned-teacher"></p>
+        <button id="delete-course-btn" class="btn">Delete course</button>
+        <table id="students-table"></table>
+
+        <div class="table-buttons">
+          <button id="add-student" class="btn">Add student</button>
+
+          <div class="dropdown-container">
+            <button class="btn">Add student to course</button>
+
+            <div id="students-dropdown" class="students-dropdown">
+            </div>
+          </div>
+
+
+          <button id="add-course" class="btn">Add course</button>
+        </div>
+
+        <!-- Add Student Modal -->
+        <div id="modal" class="modal-container">
+          <div class="modal-content">
+            <p>Create Student Form</p>
+
+            <form id="add-student-form" class="add-student-form">
+              <input type="text" required="required"  placeholder="First Name" name="firstName" />
+              <input type="text" required="required" placeholder="Last Name" name="lastName" required="required" />
+
+              <div class="gender-radios">
+                <div>
+                  <input type="radio" id="male" name="gender" value="M" />
+                  <label for="male">M</label>
+                </div>
+
+                <div>
+                  <input type="radio" id="female" name="gender" value="F" />
+                  <label for="female">F</label>
+                </div>
+              </div>
+              <input type="text" placeholder="Address" name="address" />
+
+              <div id="student-hobbies">
+
+                <input id="student-hobby-input" type="text" placeholder="Student hobby">
+                <button id="student-hobby-btn">Add</button>
+
+              </div>
+
+              <div class="modal-actions">
+                <button id="modal-close" class="btn" type="button">
+                  Close
+                </button>
+                <button id="create-student" class="btn">Create</button>
+              </div>
+            </form>
+          </div>
+        </div>
+
+        <!-- Add Course Modal -->
+        <div id="course-modal" class="modal-container">
+          <div class="modal-content">
+            <p>Add Course Form</p>
+
+            <form id="add-course-form" class="add-student-form">
+              <input type="text" required="required"  placeholder="name" name="name" />
+              <input type="text" required="required" placeholder="assignedTeacher" name="assignedTeacher" required="required" />
+
+              <div class="modal-actions">
+                <button id="course-modal-close" class="btn" type="button">
+                  Close
+                </button>
+                <button id="create-course" class="btn">Create</button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <footer></footer>
+    
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="./script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,210 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap");
+
+:root {
+  --main-text-color: #2c3e50;
+  --main-text-color-hover: #415c77;
+  --button-color: #7f8c8d;
+  --button-color-hover: #95a5a6;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  margin: 0;
+}
+
+.btn {
+  cursor: pointer;
+  background-color: var(--button-color);
+  border: 2px solid var(--button-color);
+  border-radius: 5px;
+  color: white;
+  padding: 0.5em 0.8em;
+  font-size: 1rem;
+  transition-duration: 0.4s;
+  margin: 1em;
+}
+
+.btn:hover {
+  background-color: var(--button-color-hover);
+  border: 2px solid var(--button-color);
+}
+
+.icon-td {
+  text-align: center;
+}
+
+.icon-td i {
+  cursor: pointer;
+  transition: 1s;
+}
+
+.icon-td i:hover {
+  transform: scale(1.3);
+}
+
+.hide {
+  display: none;
+}
+/* HEADER */
+.header-section {
+  box-shadow: 0px 3px 16px -8px rgba(0, 0, 0, 0.75);
+}
+
+.navbar ul {
+  display: flex;
+  list-style-type: none;
+  padding: 1em 0;
+  margin: 0;
+}
+
+.navbar-item {
+  padding: 0 0 0 1.5em;
+}
+
+.navbar-item a {
+  color: var(--main-text-color);
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: 500;
+  letter-spacing: 0.07rem;
+}
+
+.navbar-item a:hover {
+  color: var(--main-text-color-hover);
+}
+
+/* COURSES CONTAINER */
+.courses-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.courses-list {
+  display: flex;
+  list-style-type: none;
+  padding: 1em 0;
+  margin: 0;
+}
+
+.course-item {
+  cursor: pointer;
+  background-color: var(--main-text-color);
+  color: #fff;
+  font-weight: 300;
+  border-radius: 5px;
+  padding: 0.5em 1em;
+  margin: 1em;
+  transition-duration: 0.4s;
+}
+
+.course-item:first-letter {
+  text-transform: capitalize;
+}
+
+.course-item:hover {
+  background-color: var(--main-text-color-hover);
+}
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+td,
+th {
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 8px;
+}
+
+.table-buttons {
+  display: flex;
+}
+
+/* Modal*/
+
+.modal-container {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+.modal-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #fff;
+  margin: 15% auto;
+  padding: 20px;
+  border: 1px solid var(--main-text-color-hover);
+  width: 50%;
+}
+
+.modal-close:focus {
+  color: var(--main-text-color-hover);
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.add-student-form {
+  display: flex;
+  flex-direction: column;
+}
+
+.gender-radios,
+.modal-actions {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.add-student-form input {
+  margin: .5em 0;
+  padding: .4em 0;
+}
+
+.add-student-form input::-webkit-input-placeholder {
+  text-align: center;
+}
+
+.dropdown-container {
+  display: flex;
+}
+
+.students-dropdown {
+  display: none;
+  position: absolute;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.students-dropdown button {
+  display: flex;
+  padding: 12px 16px;
+  text-align: left;
+}
+
+
+.dropdown-container:hover .students-dropdown {
+  display: block;
+}
+
+.dropdown-btn {
+  cursor: pointer;
+  background-color: var(--button-color);
+  border: 2px solid var(--button-color);
+  color: white;
+  padding: 0;
+  font-size: 1rem;
+  transition-duration: 0.4s;
+  width: 100%;
+}
+
+.dropdown-btn:hover {
+  background-color: #ddd;
+}

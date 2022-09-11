@@ -1,0 +1,11 @@
+{
+  "name": "course-management",
+  "version": "1.0.0",
+  "description": "",
+  "main": "script.js",
+  "scripts": {
+    "backend": "json-server --watch db.json --port 3000"
+  },
+  "author": "",
+  "license": "ISC"
+}
